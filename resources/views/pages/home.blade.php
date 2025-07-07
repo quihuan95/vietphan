@@ -1,92 +1,5 @@
-<!DOCTYPE html>
-<html lang="vi">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VIET PHAN SERVICES AND TRADING COMPANY LIMITED</title>
-  <meta name="description" content="VIET PHAN - Kết nối, Mua bán, Đấu giá toàn cầu">
-
-  <!-- TailwindCSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- AlpineJS -->
-  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
-  <!-- GSAP -->
-  <!-- Custom Styles -->
-  <style>
-    [x-cloak] {
-      display: none !important;
-    }
-
-    .hero-bg {
-      background-image: linear-gradient(rgba(30, 58, 138, 0.8), rgba(29, 78, 216, 0.8)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
-      background-size: cover;
-      background-position: center;
-    }
-  </style>
-</head>
-
-<body class="font-sans antialiased" x-data="landingPage()">
-  <!-- Header -->
-  <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
-    <div class="container mx-auto px-4 py-4">
-      <div class="flex items-center justify-between">
-        <!-- Logo -->
-        <div class="flex items-center space-x-3">
-          <img src="{{ asset('images/vietphan.png') }}" alt="VIET PHAN Logo" class="h-[60px] rounded-lg">
-        </div>
-
-        <!-- Desktop Navigation -->
-        <nav class="hidden md:flex space-x-8">
-          <button @click="scrollToSection('home')" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-            Trang chủ
-          </button>
-          <button @click="scrollToSection('about')" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-            Giới thiệu
-          </button>
-          <button @click="scrollToSection('services')" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-            Dịch vụ
-          </button>
-          <button @click="scrollToSection('contact')" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-            Liên hệ
-          </button>
-        </nav>
-
-        <!-- Mobile Menu Button -->
-        <button @click="isMenuOpen = !isMenuOpen" class="md:hidden p-2 rounded-lg hover:bg-gray-100">
-          <svg x-show="!isMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-          <svg x-show="isMenuOpen" x-cloak class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-        </button>
-      </div>
-
-      <!-- Mobile Navigation -->
-      <nav x-show="isMenuOpen" x-cloak x-transition class="md:hidden mt-4 pb-4 border-t pt-4">
-        <div class="flex flex-col space-y-3">
-          <button @click="scrollToSection('home'); isMenuOpen = false" class="text-left text-gray-700 hover:text-blue-600 font-medium py-2">
-            Trang chủ
-          </button>
-          <button @click="scrollToSection('about'); isMenuOpen = false" class="text-left text-gray-700 hover:text-blue-600 font-medium py-2">
-            Giới thiệu
-          </button>
-          <button @click="scrollToSection('services'); isMenuOpen = false" class="text-left text-gray-700 hover:text-blue-600 font-medium py-2">
-            Dịch vụ
-          </button>
-          <button @click="scrollToSection('contact'); isMenuOpen = false" class="text-left text-gray-700 hover:text-blue-600 font-medium py-2">
-            Liên hệ
-          </button>
-        </div>
-      </nav>
-    </div>
-  </header>
-
+@extends('layouts.app')
+@section('content')
   <!-- Hero Section -->
   <section id="home" class="hero-bg min-h-screen flex items-center justify-center">
     <div class="text-center text-white px-4 max-w-4xl mx-auto">
@@ -94,12 +7,11 @@
         VIET PHAN SERVICES AND TRADING COMPANY LIMITED
       </h1>
       <p class="text-xl md:text-2xl mb-8 font-light" x-data x-intersect.once="$el.classList.add('animate-fade-in-up')">
-        Kết nối - Mua bán - Đấu giá toàn cầu
+        Tư vấn & Cung cấp thiết bị chuyên dụng cho Hội nghị – Sự kiện – Du lịch
       </p>
-      <button @click="scrollToSection('contact')"
-        class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 text-lg rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
+      <a href="tel:0918640988" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 text-lg rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
         Liên hệ ngay
-      </button>
+      </a>
     </div>
   </section>
 
@@ -150,10 +62,11 @@
 
           <div>
             <p class="text-lg text-gray-700 leading-relaxed mb-6">
-              VIET PHAN là công ty hàng đầu trong lĩnh vực đại lý, môi giới, đấu giá, cung cấp dịch vụ kết nối và mua bán hàng hóa trong nước và quốc tế.
+              VietPhan cung cấp thiết bị và giải pháp trọn gói cho hội nghị, hội thảo, sự kiện và du lịch đoàn. Chúng tôi tư vấn, khảo sát, triển khai các thiết bị: âm thanh, ánh
+              sáng, màn hình, cabin dịch, quầy triển lãm, thiết bị check-in, xe đưa đón, vật tư ngoài trời và công nghệ hỗ trợ.
             </p>
-            <p class="text-gray-600 leading-relaxed">
-              Với nhiều năm kinh nghiệm trong ngành, chúng tôi cam kết mang đến cho khách hàng những dịch vụ chất lượng cao, đáng tin cậy và hiệu quả nhất.
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+              Nếu bạn muốn rút gọn thành chỉ 1-2 câu slogan, tôi có thể viết thêm. Bạn có muốn thử không?
             </p>
           </div>
         </div>
@@ -515,192 +428,4 @@
       </div>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-12">
-    <div class="container mx-auto px-4">
-      <div class="grid md:grid-cols-6 gap-8">
-        <div class="md:col-span-2">
-          <div class="flex items-center space-x-3 mb-4">
-            <img src="{{ asset('images/vietphan.png') }}" alt="VIET PHAN Logo" class="h-[100px] rounded-lg">
-          </div>
-          <p class="text-gray-400 leading-relaxed mb-4">
-            Công ty hàng đầu trong lĩnh vực đại lý, môi giới, đấu giá, cung cấp dịch vụ kết nối và mua bán hàng hóa trong nước và quốc tế.
-          </p>
-        </div>
-        <div class="col-span-2"></div>
-        <div>
-          <h4 class="text-lg font-semibold mb-4">Liên kết nhanh</h4>
-          <ul class="space-y-2">
-            <li><button @click="scrollToSection('home')" class="text-gray-400 hover:text-white transition-colors">Trang chủ</button></li>
-            <li><button @click="scrollToSection('about')" class="text-gray-400 hover:text-white transition-colors">Giới thiệu</button></li>
-            <li><button @click="scrollToSection('services')" class="text-gray-400 hover:text-white transition-colors">Dịch vụ</button></li>
-            <li><button @click="scrollToSection('contact')" class="text-gray-400 hover:text-white transition-colors">Liên hệ</button></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="text-lg font-semibold mb-4">Mạng xã hội</h4>
-          <div class="flex space-x-3">
-            <a href="#" class="p-2 bg-blue-600 rounded-full hover:bg-blue-700 transition-colors">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
-              </svg>
-            </a>
-            <a href="#" class="p-2 bg-blue-700 rounded-full hover:bg-blue-800 transition-colors">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-              </svg>
-            </a>
-            <a href="#" class="p-2 bg-green-500 rounded-full hover:bg-green-600 transition-colors">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.085" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="border-t border-gray-800 mt-8 pt-8 text-center">
-        <p class="text-gray-400">
-          © <span x-text="new Date().getFullYear()"></span> VIET PHAN SERVICES AND TRADING COMPANY LIMITED. Tất cả quyền được bảo lưu.
-        </p>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    function landingPage() {
-      return {
-        isMenuOpen: false,
-        currentTestimonial: 0,
-        stats: {
-          experience: 0,
-          customers: 0,
-          transactions: 0
-        },
-        testimonials: [{
-            name: 'Hoàng Minh Tuấn',
-            company: 'Giám đốc, Công ty Xuất nhập khẩu An Phát',
-            content: 'VIET PHAN đã hỗ trợ chúng tôi rất tốt trong việc mở rộng thị trường quốc tế. Dịch vụ chuyên nghiệp và tận tâm.',
-            image: 'https://i.pravatar.cc/150?u=hoangminhtuan'
-          },
-          {
-            name: 'Lê Thuỳ Trang',
-            company: 'Trưởng phòng Marketing, Tập đoàn Vinafood',
-            content: 'Nhờ có VIET PHAN, chúng tôi đã tìm được nhiều đối tác uy tín và thực hiện được nhiều giao dịch thành công.',
-            image: 'https://i.pravatar.cc/150?u=lethuytrang'
-          },
-          {
-            name: 'Trần Quốc Bảo',
-            company: 'CEO, Thời trang GIA HUY',
-            content: 'Đội ngũ tư vấn của VIET PHAN rất chuyên nghiệp, luôn đưa ra những giải pháp tối ưu cho doanh nghiệp.',
-            image: 'https://i.pravatar.cc/150?u=tranqocbao'
-          }
-        ],
-        form: {
-          name: '',
-          email: '',
-          message: ''
-        },
-        isSubmitting: false,
-        showMessage: false,
-        message: '',
-        messageType: 'success',
-
-        scrollToSection(sectionId) {
-          const element = document.getElementById(sectionId);
-          if (element) {
-            element.scrollIntoView({
-              behavior: 'smooth'
-            });
-          }
-        },
-
-        startCounters() {
-          const duration = 2000;
-          const steps = 60;
-          const stepDuration = duration / steps;
-
-          let currentStep = 0;
-          const timer = setInterval(() => {
-            currentStep++;
-            const progress = currentStep / steps;
-
-            this.stats = {
-              experience: Math.floor(5 * progress),
-              customers: Math.floor(500 * progress),
-              transactions: Math.floor(1000 * progress)
-            };
-
-            if (currentStep >= steps) {
-              clearInterval(timer);
-              this.stats = {
-                experience: 5,
-                customers: 500,
-                transactions: 1000
-              };
-            }
-          }, stepDuration);
-        },
-
-        nextTestimonial() {
-          this.currentTestimonial = (this.currentTestimonial + 1) % this.testimonials.length;
-        },
-
-        prevTestimonial() {
-          this.currentTestimonial = (this.currentTestimonial - 1 + this.testimonials.length) % this.testimonials.length;
-        },
-
-        async submitForm() {
-          this.isSubmitting = true;
-
-          try {
-            // Simulate form submission
-            await new Promise(resolve => setTimeout(resolve, 1000));
-
-            // Reset form
-            this.form = {
-              name: '',
-              email: '',
-              message: ''
-            };
-
-            // Show success message
-            this.message = 'Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi trong thời gian sớm nhất.';
-            this.messageType = 'success';
-            this.showMessage = true;
-
-            // Hide message after 5 seconds
-            setTimeout(() => {
-              this.showMessage = false;
-            }, 5000);
-
-          } catch (error) {
-            this.message = 'Có lỗi xảy ra khi gửi tin nhắn. Vui lòng thử lại.';
-            this.messageType = 'error';
-            this.showMessage = true;
-
-            setTimeout(() => {
-              this.showMessage = false;
-            }, 5000);
-          } finally {
-            this.isSubmitting = false;
-          }
-        },
-
-        init() {
-          // Auto-rotate testimonials every 5 seconds
-          setInterval(() => {
-            this.nextTestimonial();
-          }, 5000);
-        }
-      }
-    }
-  </script>
-</body>
-
-</html>
+@endsection
