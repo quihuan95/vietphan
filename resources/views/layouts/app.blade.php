@@ -38,135 +38,136 @@
   @include('layouts.contact')
 
   @include('layouts.footer')
-  <script>
-    function landingPage() {
-      return {
-        isMenuOpen: false,
-        currentTestimonial: 0,
-        stats: {
-          experience: 0,
-          customers: 0,
-          transactions: 0
+</body>
+
+<script>
+  function landingPage() {
+    return {
+      isMenuOpen: false,
+      currentTestimonial: 0,
+      stats: {
+        experience: 0,
+        customers: 0,
+        transactions: 0
+      },
+      testimonials: [{
+          name: 'Hoàng Minh Tuấn',
+          company: 'Giám đốc, Công ty Xuất nhập khẩu An Phát',
+          content: 'VIET PHAN đã hỗ trợ chúng tôi rất tốt trong việc mở rộng thị trường quốc tế. Dịch vụ chuyên nghiệp và tận tâm.',
+          image: 'https://i.pravatar.cc/150?u=hoangminhtuan'
         },
-        testimonials: [{
-            name: 'Hoàng Minh Tuấn',
-            company: 'Giám đốc, Công ty Xuất nhập khẩu An Phát',
-            content: 'VIET PHAN đã hỗ trợ chúng tôi rất tốt trong việc mở rộng thị trường quốc tế. Dịch vụ chuyên nghiệp và tận tâm.',
-            image: 'https://i.pravatar.cc/150?u=hoangminhtuan'
-          },
-          {
-            name: 'Lê Thuỳ Trang',
-            company: 'Trưởng phòng Marketing, Tập đoàn Vinafood',
-            content: 'Nhờ có VIET PHAN, chúng tôi đã tìm được nhiều đối tác uy tín và thực hiện được nhiều giao dịch thành công.',
-            image: 'https://i.pravatar.cc/150?u=lethuytrang'
-          },
-          {
-            name: 'Trần Quốc Bảo',
-            company: 'CEO, Thời trang GIA HUY',
-            content: 'Đội ngũ tư vấn của VIET PHAN rất chuyên nghiệp, luôn đưa ra những giải pháp tối ưu cho doanh nghiệp.',
-            image: 'https://i.pravatar.cc/150?u=tranqocbao'
-          }
-        ],
-        form: {
-          name: '',
-          email: '',
-          message: ''
+        {
+          name: 'Lê Thuỳ Trang',
+          company: 'Trưởng phòng Marketing, Tập đoàn Vinafood',
+          content: 'Nhờ có VIET PHAN, chúng tôi đã tìm được nhiều đối tác uy tín và thực hiện được nhiều giao dịch thành công.',
+          image: 'https://i.pravatar.cc/150?u=lethuytrang'
         },
-        isSubmitting: false,
-        showMessage: false,
-        message: '',
-        messageType: 'success',
-
-        scrollToSection(sectionId) {
-          const element = document.getElementById(sectionId);
-          if (element) {
-            element.scrollIntoView({
-              behavior: 'smooth'
-            });
-          }
-        },
-
-        startCounters() {
-          const duration = 2000;
-          const steps = 60;
-          const stepDuration = duration / steps;
-
-          let currentStep = 0;
-          const timer = setInterval(() => {
-            currentStep++;
-            const progress = currentStep / steps;
-
-            this.stats = {
-              experience: Math.floor(5 * progress),
-              customers: Math.floor(500 * progress),
-              transactions: Math.floor(1000 * progress)
-            };
-
-            if (currentStep >= steps) {
-              clearInterval(timer);
-              this.stats = {
-                experience: 5,
-                customers: 500,
-                transactions: 1000
-              };
-            }
-          }, stepDuration);
-        },
-
-        nextTestimonial() {
-          this.currentTestimonial = (this.currentTestimonial + 1) % this.testimonials.length;
-        },
-
-        prevTestimonial() {
-          this.currentTestimonial = (this.currentTestimonial - 1 + this.testimonials.length) % this.testimonials.length;
-        },
-
-        async submitForm() {
-          this.isSubmitting = true;
-
-          try {
-            // Simulate form submission
-            await new Promise(resolve => setTimeout(resolve, 1000));
-
-            // Reset form
-            this.form = {
-              name: '',
-              email: '',
-              message: ''
-            };
-
-            // Show success message
-            this.message = 'Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi trong thời gian sớm nhất.';
-            this.messageType = 'success';
-            this.showMessage = true;
-
-            // Hide message after 5 seconds
-            setTimeout(() => {
-              this.showMessage = false;
-            }, 5000);
-
-          } catch (error) {
-            this.message = 'Có lỗi xảy ra khi gửi tin nhắn. Vui lòng thử lại.';
-            this.messageType = 'error';
-            this.showMessage = true;
-
-            setTimeout(() => {
-              this.showMessage = false;
-            }, 5000);
-          } finally {
-            this.isSubmitting = false;
-          }
-        },
-
-        init() {
-          // Auto-rotate testimonials every 5 seconds
-          setInterval(() => {
-            this.nextTestimonial();
-          }, 5000);
+        {
+          name: 'Trần Quốc Bảo',
+          company: 'CEO, Thời trang GIA HUY',
+          content: 'Đội ngũ tư vấn của VIET PHAN rất chuyên nghiệp, luôn đưa ra những giải pháp tối ưu cho doanh nghiệp.',
+          image: 'https://i.pravatar.cc/150?u=tranqocbao'
         }
+      ],
+      form: {
+        name: '',
+        email: '',
+        message: ''
+      },
+      isSubmitting: false,
+      showMessage: false,
+      message: '',
+      messageType: 'success',
+
+      scrollToSection(sectionId) {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      },
+
+      startCounters() {
+        const duration = 2000;
+        const steps = 60;
+        const stepDuration = duration / steps;
+
+        let currentStep = 0;
+        const timer = setInterval(() => {
+          currentStep++;
+          const progress = currentStep / steps;
+
+          this.stats = {
+            experience: Math.floor(5 * progress),
+            customers: Math.floor(500 * progress),
+            transactions: Math.floor(1000 * progress)
+          };
+
+          if (currentStep >= steps) {
+            clearInterval(timer);
+            this.stats = {
+              experience: 5,
+              customers: 500,
+              transactions: 1000
+            };
+          }
+        }, stepDuration);
+      },
+
+      nextTestimonial() {
+        this.currentTestimonial = (this.currentTestimonial + 1) % this.testimonials.length;
+      },
+
+      prevTestimonial() {
+        this.currentTestimonial = (this.currentTestimonial - 1 + this.testimonials.length) % this.testimonials.length;
+      },
+
+      async submitForm() {
+        this.isSubmitting = true;
+
+        try {
+          // Simulate form submission
+          await new Promise(resolve => setTimeout(resolve, 1000));
+
+          // Reset form
+          this.form = {
+            name: '',
+            email: '',
+            message: ''
+          };
+
+          // Show success message
+          this.message = 'Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi trong thời gian sớm nhất.';
+          this.messageType = 'success';
+          this.showMessage = true;
+
+          // Hide message after 5 seconds
+          setTimeout(() => {
+            this.showMessage = false;
+          }, 5000);
+
+        } catch (error) {
+          this.message = 'Có lỗi xảy ra khi gửi tin nhắn. Vui lòng thử lại.';
+          this.messageType = 'error';
+          this.showMessage = true;
+
+          setTimeout(() => {
+            this.showMessage = false;
+          }, 5000);
+        } finally {
+          this.isSubmitting = false;
+        }
+      },
+
+      init() {
+        // Auto-rotate testimonials every 5 seconds
+        setInterval(() => {
+          this.nextTestimonial();
+        }, 5000);
       }
     }
-  </script>
-</body>
+  }
+</script>
 
 </html>
