@@ -171,6 +171,40 @@
     </div>
   </section>
 
+  <section class="py-20 bg-slate-100">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Quy trình của chúng tôi</h2>
+        <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Chúng tôi cung cấp đa dạng các dịch vụ chuyên nghiệp để đáp ứng mọi nhu cầu của khách hàng
+        </p>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-4">
+        <div class="w-full md:w-[50%] xl:w-[33%] max-w-[380px] transition-all duration-300 transform hover:-translate-y-2 text-center">
+          <img src="{{ asset('images/anh_web-01.png') }}" alt="">
+        </div>
+
+        <div class="w-full md:w-[50%] xl:w-[33%] max-w-[380px] transition-all duration-300 transform hover:-translate-y-2 text-center">
+          <img src="{{ asset('images/anh_web-02.png') }}" alt="">
+        </div>
+
+        <div class="w-full md:w-[50%] xl:w-[33%] max-w-[380px] transition-all duration-300 transform hover:-translate-y-2 text-center">
+          <img src="{{ asset('images/anh_web-03.png') }}" alt="">
+        </div>
+
+        <div class="w-full md:w-[50%] xl:w-[33%] max-w-[380px] transition-all duration-300 transform hover:-translate-y-2 text-center">
+          <img src="{{ asset('images/anh_web-04.png') }}" alt="">
+        </div>
+
+        <div class="w-full md:w-[50%] xl:w-[33%] max-w-[380px] transition-all duration-300 transform hover:-translate-y-2 text-center">
+          <img src="{{ asset('images/anh_web-05.png') }}" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Our Team Section -->
   <section id="team" class="py-20 bg-white">
     <div class="container mx-auto px-4">
