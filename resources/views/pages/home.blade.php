@@ -180,27 +180,51 @@
         </p>
       </div>
 
-      <div class="flex flex-wrap justify-center gap-4">
-        <div class="w-full md:w-[50%] xl:w-[33%] max-w-[380px] transition-all duration-300 transform hover:-translate-y-2 text-center">
-          <img src="{{ asset('images/anh_web-01.png') }}" alt="">
-        </div>
+      @if (Config::get('app.locale') == 'vi')
+        <div class="flex flex-wrap justify-center gap-4">
+          <div class="w-full md:w-[50%] xl:w-[33%] max-w-[380px] transition-all duration-300 transform hover:-translate-y-2 text-center">
+            <img src="{{ asset('images/anh_web-01.png') }}" alt="">
+          </div>
 
-        <div class="w-full md:w-[50%] xl:w-[33%] max-w-[380px] transition-all duration-300 transform hover:-translate-y-2 text-center">
-          <img src="{{ asset('images/anh_web-02.png') }}" alt="">
-        </div>
+          <div class="w-full md:w-[50%] xl:w-[33%] max-w-[380px] transition-all duration-300 transform hover:-translate-y-2 text-center">
+            <img src="{{ asset('images/anh_web-02.png') }}" alt="">
+          </div>
 
-        <div class="w-full md:w-[50%] xl:w-[33%] max-w-[380px] transition-all duration-300 transform hover:-translate-y-2 text-center">
-          <img src="{{ asset('images/anh_web-03.png') }}" alt="">
-        </div>
+          <div class="w-full md:w-[50%] xl:w-[33%] max-w-[380px] transition-all duration-300 transform hover:-translate-y-2 text-center">
+            <img src="{{ asset('images/anh_web-03.png') }}" alt="">
+          </div>
 
-        <div class="w-full md:w-[50%] xl:w-[33%] max-w-[380px] transition-all duration-300 transform hover:-translate-y-2 text-center">
-          <img src="{{ asset('images/anh_web-04.png') }}" alt="">
-        </div>
+          <div class="w-full md:w-[50%] xl:w-[33%] max-w-[380px] transition-all duration-300 transform hover:-translate-y-2 text-center">
+            <img src="{{ asset('images/anh_web-04.png') }}" alt="">
+          </div>
 
-        <div class="w-full md:w-[50%] xl:w-[33%] max-w-[380px] transition-all duration-300 transform hover:-translate-y-2 text-center">
-          <img src="{{ asset('images/anh_web-05.png') }}" alt="">
+          <div class="w-full md:w-[50%] xl:w-[33%] max-w-[380px] transition-all duration-300 transform hover:-translate-y-2 text-center">
+            <img src="{{ asset('images/anh_web-05.png') }}" alt="">
+          </div>
         </div>
-      </div>
+      @elseif (Config::get('app.locale') == 'en')
+        <div class="flex flex-wrap justify-center gap-4">
+          <div class="w-full md:w-[50%] xl:w-[33%] max-w-[380px] transition-all duration-300 transform hover:-translate-y-2 text-center">
+            <img src="{{ asset('images/anh_web_ta-01.png') }}" alt="">
+          </div>
+
+          <div class="w-full md:w-[50%] xl:w-[33%] max-w-[380px] transition-all duration-300 transform hover:-translate-y-2 text-center">
+            <img src="{{ asset('images/anh_web_ta-02.png') }}" alt="">
+          </div>
+
+          <div class="w-full md:w-[50%] xl:w-[33%] max-w-[380px] transition-all duration-300 transform hover:-translate-y-2 text-center">
+            <img src="{{ asset('images/anh_web_ta-03.png') }}" alt="">
+          </div>
+
+          <div class="w-full md:w-[50%] xl:w-[33%] max-w-[380px] transition-all duration-300 transform hover:-translate-y-2 text-center">
+            <img src="{{ asset('images/anh_web_ta-04.png') }}" alt="">
+          </div>
+
+          <div class="w-full md:w-[50%] xl:w-[33%] max-w-[380px] transition-all duration-300 transform hover:-translate-y-2 text-center">
+            <img src="{{ asset('images/anh_web_ta-05.png') }}" alt="">
+          </div>
+        </div>
+      @endif
     </div>
   </section>
 
