@@ -44,6 +44,7 @@
   function landingPage() {
     return {
       isMenuOpen: false,
+      isLanguageOpen: false,
       currentTestimonial: 0,
       stats: {
         experience: 0,
@@ -51,21 +52,21 @@
         transactions: 0
       },
       testimonials: [{
-          name: 'Hoàng Minh Tuấn',
-          company: 'Giám đốc, Công ty Xuất nhập khẩu An Phát',
-          content: 'VIET PHAN đã hỗ trợ chúng tôi rất tốt trong việc mở rộng thị trường quốc tế. Dịch vụ chuyên nghiệp và tận tâm.',
+          name: '{{ __('Hoàng Minh Tuấn') }}',
+          company: '{{ __('Director, An Phat Import Export Company') }}',
+          content: '{{ __('VIET PHAN has supported us very well in expanding international markets. Professional and dedicated service.') }}',
           image: 'https://i.pravatar.cc/150?u=hoangminhtuan'
         },
         {
-          name: 'Lê Thuỳ Trang',
-          company: 'Trưởng phòng Marketing, Tập đoàn Vinafood',
-          content: 'Nhờ có VIET PHAN, chúng tôi đã tìm được nhiều đối tác uy tín và thực hiện được nhiều giao dịch thành công.',
+          name: '{{ __('Lê Thuỳ Trang') }}',
+          company: '{{ __('Marketing Manager, Vinafood Group') }}',
+          content: '{{ __('Thanks to VIET PHAN, we have found many reputable partners and completed many successful transactions.') }}',
           image: 'https://i.pravatar.cc/150?u=lethuytrang'
         },
         {
-          name: 'Trần Quốc Bảo',
-          company: 'CEO, Thời trang GIA HUY',
-          content: 'Đội ngũ tư vấn của VIET PHAN rất chuyên nghiệp, luôn đưa ra những giải pháp tối ưu cho doanh nghiệp.',
+          name: '{{ __('Trần Quốc Bảo') }}',
+          company: '{{ __('CEO, GIA HUY Fashion') }}',
+          content: '{{ __("VIET PHAN\'s consulting team is very professional, always providing optimal solutions for businesses.") }}',
           image: 'https://i.pravatar.cc/150?u=tranqocbao'
         }
       ],
@@ -138,7 +139,7 @@
           };
 
           // Show success message
-          this.message = 'Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi trong thời gian sớm nhất.';
+          this.message = '{{ __('Thank you for contacting us! We will respond as soon as possible.') }}';
           this.messageType = 'success';
           this.showMessage = true;
 
@@ -148,7 +149,7 @@
           }, 5000);
 
         } catch (error) {
-          this.message = 'Có lỗi xảy ra khi gửi tin nhắn. Vui lòng thử lại.';
+          this.message = '{{ __('An error occurred while sending the message. Please try again.') }}';
           this.messageType = 'error';
           this.showMessage = true;
 
