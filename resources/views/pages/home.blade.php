@@ -89,9 +89,7 @@
           class="w-full md:w-[50%] xl:w-[30%] max-w-[360px] bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center">
           <div class="flex justify-center mb-4">
             <!-- Shopping Bag Solid Icon -->
-            <svg class="w-14 h-14 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M16 6V5a4 4 0 10-8 0v1H4a1 1 0 00-1 1v10a2 2 0 002 2h10a2 2 0 002-2V7a1 1 0 00-1-1h-2zm-6-1a2 2 0 114 0v1h-4V5zm-2 3h8v9a1 1 0 01-1 1H5a1 1 0 01-1-1V8z" />
-            </svg>
+            <img src="{{ asset('images/icon_a_minh-01.png') }}" class="h-[150px] object-contain" alt="Shopping Bag Solid Icon">
           </div>
           <h3 class="text-xl font-semibold mb-3 text-gray-900">{{ __('Conference Equipment') }}</h3>
           <ul class="text-gray-600 leading-relaxed list-disc text-start ml-5">
@@ -105,11 +103,7 @@
           class="w-full md:w-[50%] xl:w-[30%] max-w-[360px] bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center">
           <div class="flex justify-center mb-4">
             <!-- Globe Solid Icon -->
-            <svg class="w-14 h-14 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd"
-                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.46-2.12A6.97 6.97 0 0017 10c0-.34-.02-.67-.05-1H13v2a1 1 0 01-1 1H8v2h2a1 1 0 011 1v2.88zM4.05 9A7.01 7.01 0 003 10c0 .34.02.67.05 1H7V9H4.05zm1.49-3.88A6.97 6.97 0 003 10c0 .34.02.67.05 1H7V9H4.05zm10.41 0A6.97 6.97 0 0017 10c0 .34-.02.67-.05 1H13V9h3.46zM10 2a8 8 0 00-7.95 7h3.46V7a1 1 0 011-1h2V4a1 1 0 011-1h2V2.05z"
-                clip-rule="evenodd" />
-            </svg>
+            <img src="{{ asset('images/icon_a_minh-02.png') }}" class="h-[150px] object-contain" alt="Globe Solid Icon">
           </div>
           <h3 class="text-xl font-semibold mb-3 text-gray-900">{{ __('Event Equipment') }}</h3>
           <ul class="text-gray-600 leading-relaxed list-disc text-start ml-5">
@@ -123,9 +117,7 @@
           class="w-full md:w-[50%] xl:w-[30%] max-w-[360px] bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center">
           <div class="flex justify-center mb-4">
             <!-- Scale Solid Icon -->
-            <svg class="w-14 h-14 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M9 2a1 1 0 112 0v1h3a1 1 0 01.97 1.243l-1.5 6A1 1 0 0112.5 11h-5a1 1 0 01-.97-1.243l1.5-6A1 1 0 018 3h3V2zM4 15a3 3 0 106 0H4zm6 0a3 3 0 106 0h-6z" />
-            </svg>
+            <img src="{{ asset('images/icon_a_minh-03.png') }}" class="h-[150px] object-contain" alt="Scale Solid Icon">
           </div>
           <h3 class="text-xl font-semibold mb-3 text-gray-900">{{ __('Tour Equipment') }}</h3>
           <ul class="text-gray-600 leading-relaxed list-disc text-start ml-5">
@@ -139,9 +131,7 @@
           class="w-full md:w-[50%] xl:w-[30%] max-w-[360px] bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center">
           <div class="flex justify-center mb-4">
             <!-- Handshake Solid Icon -->
-            <svg class="w-14 h-14 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M18.364 5.636a4 4 0 00-5.657 0L10 8.343l-2.707-2.707a4 4 0 00-5.657 5.657l8.364 8.364a1 1 0 001.414 0l8.364-8.364a4 4 0 000-5.657z" />
-            </svg>
+            <img src="{{ asset('images/icon_a_minh-04.png') }}" class="h-[150px] object-contain" alt="Handshake Solid Icon">
           </div>
           <h3 class="text-xl font-semibold mb-3 text-gray-900">{{ __('Complete Solution Consulting') }}</h3>
           <ul class="text-gray-600 leading-relaxed list-disc text-start ml-5">
@@ -155,9 +145,7 @@
           class="w-full md:w-[50%] xl:w-[30%] max-w-[360px] bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center">
           <div class="flex justify-center mb-4">
             <!-- Handshake Solid Icon -->
-            <svg class="w-14 h-14 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M18.364 5.636a4 4 0 00-5.657 0L10 8.343l-2.707-2.707a4 4 0 00-5.657 5.657l8.364 8.364a1 1 0 001.414 0l8.364-8.364a4 4 0 000-5.657z" />
-            </svg>
+            <img src="{{ asset('images/icon_a_minh-05.png') }}" class="h-[150px] object-contain" alt="Handshake Solid Icon">
           </div>
           <h3 class="text-xl font-semibold mb-3 text-gray-900">{{ __('Technology Solution Consulting') }}</h3>
           <ul class="text-gray-600 leading-relaxed list-disc text-start ml-5">
