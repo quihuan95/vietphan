@@ -7,12 +7,7 @@
   <title>VIET PHAN SERVICES AND TRADING COMPANY LIMITED</title>
   <meta name="description" content="VIET PHAN - Kết nối, Mua bán, Đấu giá toàn cầu">
 
-  <!-- AlpineJS -->
-  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
-  @vite('resources/css/app.css')
+  @vite(['resources/css/app.css', 'resources/js/app.js'])
 
   <!-- GSAP -->
   <!-- Custom Styles -->

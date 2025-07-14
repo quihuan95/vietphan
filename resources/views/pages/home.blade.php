@@ -244,44 +244,78 @@
     </div>
   </section>
 
-  <!-- Testimonials Section -->
-  <section class="py-20 bg-gray-50">
+  <!-- Customer Partners Section -->
+  <section class="py-20 lux-section section-gsap">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{{ __('What Our Clients Say') }}</h2>
-        <div class="w-24 h-1 bg-blue-600 mx-auto"></div>
+        <h2 class="text-4xl md:text-5xl font-display font-bold mb-6 text-[#17375e]">{{ __('customer_partners_title') }}</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          {{ __('customer_partners_desc') }}
+        </p>
       </div>
 
-      <div class="max-w-4xl mx-auto">
-        <div class="bg-white rounded-lg shadow-xl relative overflow-hidden">
-          <div class="p-8 md:p-12 text-center">
-            <img :src="testimonials[currentTestimonial].image" alt="Profile picture" class="w-24 h-24 rounded-full mx-auto mb-6 border-4 border-white shadow-lg">
-            <p class="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed italic">
-              " <span x-text="testimonials[currentTestimonial].content"></span> "
-            </p>
-            <div class="pt-6">
-              <p class="font-semibold text-gray-900 text-lg" x-text="testimonials[currentTestimonial].name"></p>
-              <p class="text-blue-600" x-text="testimonials[currentTestimonial].company"></p>
-            </div>
+      <!-- Swiper Slider -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide flex justify-center">
+            <img src="{{ asset('images/doi_tac/1.png') }}" alt="Techcombank" class="h-16 object-contain mx-auto">
+          </div>
+          <div class="swiper-slide flex justify-center">
+            <img src="{{ asset('images/doi_tac/2.png') }}" alt="Techcombank" class="h-16 object-contain mx-auto">
+          </div>
+          <div class="swiper-slide flex justify-center">
+            <img src="{{ asset('images/doi_tac/3.png') }}" alt="Techcombank" class="h-16 object-contain mx-auto">
+          </div>
+          <div class="swiper-slide flex justify-center">
+            <img src="{{ asset('images/doi_tac/4.png') }}" alt="Techcombank" class="h-16 object-contain mx-auto">
+          </div>
+          <div class="swiper-slide flex justify-center">
+            <img src="{{ asset('images/doi_tac/4.1.png') }}" alt="Techcombank" class="h-16 object-contain mx-auto">
+          </div>
+          <div class="swiper-slide flex justify-center">
+            <img src="{{ asset('images/doi_tac/5.png') }}" alt="Techcombank" class="h-16 object-contain mx-auto">
+          </div>
+          <div class="swiper-slide flex justify-center">
+            <img src="{{ asset('images/doi_tac/6.png') }}" alt="Techcombank" class="h-24 object-contain mx-auto">
+          </div>
+          <div class="swiper-slide flex justify-center">
+            <img src="{{ asset('images/doi_tac/7.jpg') }}" alt="Techcombank" class="h-24 object-contain mx-auto">
+          </div>
+          <div class="swiper-slide flex justify-center">
+            <img src="{{ asset('images/doi_tac/8.1.png') }}" alt="Techcombank" class="h-24 object-contain mx-auto">
+          </div>
+          <div class="swiper-slide flex justify-center">
+            <img src="{{ asset('images/doi_tac/8.png') }}" alt="Techcombank" class="h-24 object-contain mx-auto">
+          </div>
+          <div class="swiper-slide flex justify-center">
+            <img src="{{ asset('images/doi_tac/9.jpg') }}" alt="Techcombank" class="h-24 object-contain mx-auto">
+          </div>
+          <div class="swiper-slide flex justify-center">
+            <img src="{{ asset('images/doi_tac/9.png') }}" alt="Techcombank" class="h-24 object-contain mx-auto">
+          </div>
+          <div class="swiper-slide flex justify-center">
+            <img src="{{ asset('images/doi_tac/10.png') }}" alt="Techcombank" class="h-24 object-contain mx-auto">
+          </div>
+          <div class="swiper-slide flex justify-center">
+            <img src="{{ asset('images/doi_tac/11.png') }}" alt="Techcombank" class="h-24 object-contain mx-auto">
+          </div>
+          <div class="swiper-slide flex justify-center">
+            <img src="{{ asset('images/doi_tac/12.png') }}" alt="Techcombank" class="h-24 object-contain mx-auto">
+          </div>
+          <div class="swiper-slide flex justify-center">
+            <img src="{{ asset('images/doi_tac/13.png') }}" alt="Techcombank" class="h-24 object-contain mx-auto">
+          </div>
+          <div class="swiper-slide flex justify-center">
+            <img src="{{ asset('images/doi_tac/14.png') }}" alt="Techcombank" class="h-24 object-contain mx-auto">
+          </div>
+          <div class="swiper-slide flex justify-center">
+            <img src="{{ asset('images/doi_tac/15.jpg') }}" alt="Techcombank" class="h-24 object-contain mx-auto">
+          </div>
+          <div class="swiper-slide flex justify-center">
+            <img src="{{ asset('images/doi_tac/16.jpeg') }}" alt="Techcombank" class="h-24 object-contain mx-auto">
           </div>
 
-          <button @click="prevTestimonial()" class="absolute left-4 top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-white shadow-lg hover:bg-gray-50 transition-colors">
-            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-            </svg>
-          </button>
-          <button @click="nextTestimonial()" class="absolute right-4 top-1/2 transform -translate-y-1/2 p-2 rounded-full bg-white shadow-lg hover:bg-gray-50 transition-colors">
-            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg>
-          </button>
-        </div>
-
-        <div class="flex justify-center mt-6 space-x-2">
-          <template x-for="(testimonial, index) in testimonials" :key="index">
-            <button @click="currentTestimonial = index" :class="index === currentTestimonial ? 'bg-blue-600' : 'bg-gray-300'"
-              class="w-3 h-3 rounded-full transition-colors"></button>
-          </template>
         </div>
       </div>
     </div>
