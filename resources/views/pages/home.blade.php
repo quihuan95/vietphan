@@ -158,7 +158,7 @@
     </div>
   </section>
 
-  <section class="py-20 bg-slate-100">
+  <section id="process" class="py-20 bg-slate-100">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{{ __('Our Process') }}</h2>
@@ -217,7 +217,7 @@
   </section>
 
   <!-- Statistics Section -->
-  <section class="py-20 bg-blue-900 text-white" x-intersect.once="startCounters()">
+  <section id="projects" class="py-20 bg-blue-900 text-white" x-intersect.once="startCounters()">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">{{ __('Statistics') }}</h2>
@@ -245,7 +245,7 @@
   </section>
 
   <!-- Customer Partners Section -->
-  <section class="py-20 lux-section section-gsap">
+  <section id="partners" class="py-20 lux-section section-gsap">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
         <h2 class="text-4xl md:text-5xl font-display font-bold mb-6 text-[#17375e]">{{ __('customer_partners_title') }}</h2>
@@ -406,7 +406,7 @@
               </div>
               <div>
                 <h4 class="font-semibold text-gray-900">{{ __('Email Address') }}</h4>
-                <p class="text-gray-600">info@vietphan.com</p>
+                <p class="text-gray-600">vietphan.tourism@gmail.com</p>
               </div>
             </div>
 

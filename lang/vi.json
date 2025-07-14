@@ -8,7 +8,6 @@
   "Professional Services": "Dịch vụ chuyên nghiệp",
   "Get Started": "Bắt đầu",
   "Learn More": "Tìm hiểu thêm",
-  "Our Services": "Dịch vụ của chúng tôi",
   "What We Do": "Những gì chúng tôi làm",
   "Contact Us": "Liên hệ với chúng tôi",
   "Get in Touch": "Liên lạc",
@@ -24,9 +23,6 @@
   "Email Address": "Địa chỉ email",
   "Working Hours": "Giờ làm việc",
   "Monday - Friday": "Thứ 2 - Thứ 6",
-  "Saturday": "Thứ 7",
-  "Sunday": "Chủ nhật",
-  "Closed": "Đóng cửa",
   "Follow Us": "Theo dõi chúng tôi",
   "All Rights Reserved": "Bản quyền thuộc về",
   "Privacy Policy": "Chính sách bảo mật",
@@ -194,5 +190,9 @@
   "Enter your message": "Nhập nội dung tin nhắn",
   "Hoàng Minh Tuấn": "Hoàng Minh Tuấn",
   "Lê Thuỳ Trang": "Lê Thuỳ Trang",
-  "Trần Quốc Bảo": "Trần Quốc Bảo"
+  "Trần Quốc Bảo": "Trần Quốc Bảo",
+  "Danh mục dịch vụ cung cấp": "Danh mục dịch vụ cung cấp",
+  "Quy trình tư vấn": "Quy trình tư vấn",
+  "Dự án đã thực hiện": "Dự án đã thực hiện",
+  "Đối tác – Khách hàng": "Đối tác – Khách hàng"
 }

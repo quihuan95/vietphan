@@ -24,7 +24,7 @@
   </style>
 </head>
 
-<body class="font-sans antialiased" x-data="landingPage()">
+<body class="font-sans antialiased w-screen overflow-x-hidden" x-data="landingPage()">
 
   @include('layouts.header')
 

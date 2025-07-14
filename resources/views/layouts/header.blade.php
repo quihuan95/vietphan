@@ -9,26 +9,23 @@
 
         <!-- Desktop Navigation -->
         <nav class="hidden md:flex space-x-8">
-          <a href="{{ route('home.index') }}" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-            {{ __('Home') }}
-          </a>
           <button @click="scrollToSection('about')" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-            {{ __('About') }}
+            {{ __('Giới thiệu') }}
           </button>
           <button @click="scrollToSection('services')" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-            {{ __('Services') }}
+            {{ __('Danh mục dịch vụ cung cấp') }}
           </button>
-          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-            {{ __('Our Services') }}
-          </a>
-          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-            {{ __('What We Do') }}
-          </a>
-          <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-            {{ __('Contact Us') }}
-          </a>
+          <button @click="scrollToSection('process')" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">
+            {{ __('Quy trình tư vấn') }}
+          </button>
+          <button @click="scrollToSection('projects')" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">
+            {{ __('Dự án đã thực hiện') }}
+          </button>
+          <button @click="scrollToSection('partners')" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">
+            {{ __('Đối tác – Khách hàng') }}
+          </button>
           <button @click="scrollToSection('contact')" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-            {{ __('Contact') }}
+            {{ __('Liên hệ') }}
           </button>
         </nav>
 
@@ -75,17 +72,23 @@
       <!-- Mobile Navigation -->
       <nav x-show="isMenuOpen" x-cloak x-transition class="md:hidden mt-4 pb-4 border-t pt-4">
         <div class="flex flex-col space-y-3">
-          <button @click="scrollToSection('home'); isMenuOpen = false" class="text-left text-gray-700 hover:text-blue-600 font-medium py-2">
-            {{ __('Home') }}
-          </button>
           <button @click="scrollToSection('about'); isMenuOpen = false" class="text-left text-gray-700 hover:text-blue-600 font-medium py-2">
-            {{ __('About') }}
+            {{ __('Giới thiệu') }}
           </button>
           <button @click="scrollToSection('services'); isMenuOpen = false" class="text-left text-gray-700 hover:text-blue-600 font-medium py-2">
-            {{ __('Services') }}
+            {{ __('Danh mục dịch vụ cung cấp') }}
+          </button>
+          <button @click="scrollToSection('process'); isMenuOpen = false" class="text-left text-gray-700 hover:text-blue-600 font-medium py-2">
+            {{ __('Quy trình tư vấn') }}
+          </button>
+          <button @click="scrollToSection('projects'); isMenuOpen = false" class="text-left text-gray-700 hover:text-blue-600 font-medium py-2">
+            {{ __('Dự án đã thực hiện') }}
+          </button>
+          <button @click="scrollToSection('partners'); isMenuOpen = false" class="text-left text-gray-700 hover:text-blue-600 font-medium py-2">
+            {{ __('Đối tác – Khách hàng') }}
           </button>
           <button @click="scrollToSection('contact'); isMenuOpen = false" class="text-left text-gray-700 hover:text-blue-600 font-medium py-2">
-            {{ __('Contact') }}
+            {{ __('Liên hệ') }}
           </button>
 
           <!-- Mobile Language Switcher -->
