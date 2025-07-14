@@ -379,7 +379,7 @@
               </div>
               <div>
                 <h4 class="font-semibold text-gray-900">{{ __('Address') }}</h4>
-                <p class="text-gray-600">123 Business Street, Hanoi, Vietnam</p>
+                <p class="text-gray-600">Số 32 Hào Nam, Phường Ô Chợ Dừa, Hà Nội, Việt Nam</p>
               </div>
             </div>
 
