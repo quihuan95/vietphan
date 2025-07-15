@@ -20,7 +20,7 @@
   "Submit": "Submit",
   "Address": "Address",
   "Phone Number": "Phone Number",
-  "Email Address": "Email Address",
+  "Email Address": "Email",
   "Working Hours": "Working Hours",
   "Monday - Friday": "Monday - Friday",
   "Follow Us": "Follow Us",
@@ -196,5 +196,7 @@
   "Quy trình tư vấn": "Consulting Process",
   "Dự án đã thực hiện": "Completed Projects",
   "Đối tác – Khách hàng": "Partners – Customers",
-  "Liên hệ": "Contact"
+  "Liên hệ": "Contact",
+  "Tin tức": "News",
+  "Danh sách bài viết": "List of articles"
 }

@@ -15,9 +15,6 @@ Alpine.start();
 window.axios.defaults.headers.common["X-Requested-With"] = "XMLHttpRequest";
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Partners Swiper
-    console.log("hello");
-
     new Swiper(".swiper-container", {
         slidesPerView: 5, // Số logo hiển thị cùng lúc
         spaceBetween: 30, // Khoảng cách giữa các logo
@@ -40,5 +37,23 @@ document.addEventListener("DOMContentLoaded", function () {
                 spaceBetween: 30,
             },
         },
+    });
+
+    new Swiper(".myBlogSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        breakpoints: {
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        loop: false,
     });
 });

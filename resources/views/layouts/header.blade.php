@@ -18,6 +18,9 @@
           <button @click="scrollToSection('process')" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">
             {{ __('Quy trình tư vấn') }}
           </button>
+          <button @click="scrollToSection('blog')" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">
+            {{ __('Tin tức') }}
+          </button>
           <button @click="scrollToSection('projects')" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">
             {{ __('Dự án đã thực hiện') }}
           </button>

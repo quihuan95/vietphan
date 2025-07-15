@@ -158,6 +158,9 @@
     </div>
   </section>
 
+  <section id="blog" class="py-20">
+    @include('pages.blog.index')
+  </section>
   <section id="process" class="py-20 bg-slate-100">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
@@ -339,17 +342,17 @@
           <form @submit.prevent="submitForm()" class="space-y-6">
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">{{ __('Name') }} *</label>
-              <input x-model="form.name" type="text" :placeholder="__('Enter your name')"
+              <input x-model="form.name" type="text" placeholder="{{ __('Enter your name') }}"
                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">{{ __('Email') }} *</label>
-              <input x-model="form.email" type="email" :placeholder="__('Enter your email')"
+              <input x-model="form.email" type="email" placeholder="{{ __('Enter your email') }}"
                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">{{ __('Message') }} *</label>
-              <textarea x-model="form.message" rows="4" :placeholder="__('Enter your message')"
+              <textarea x-model="form.message" rows="4" placeholder="{{ __('Enter your message') }}"
                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" required></textarea>
             </div>
             <button type="submit" :disabled="isSubmitting"
