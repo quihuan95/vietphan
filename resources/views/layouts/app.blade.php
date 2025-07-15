@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VIET PHAN SERVICES AND TRADING COMPANY LIMITED</title>
   <meta name="description" content="VIET PHAN - Kết nối, Mua bán, Đấu giá toàn cầu">
-
+  <meta property="og:title" content="VIET PHAN SERVICES AND TRADING COMPANY LIMITED">
+  <meta property="og:description" content="VIET PHAN - Kết nối, Mua bán, Đấu giá toàn cầu">
+  <meta property="og:image" content="{{ asset('images/vietphan.png') }}">
+  <meta property="og:url" content="https://vietphan.vn/">
+  <meta property="og:type" content="website">
   @vite(['resources/css/app.css', 'resources/js/app.js'])
 
   <!-- GSAP -->
