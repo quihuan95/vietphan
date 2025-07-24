@@ -4,7 +4,7 @@
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <div class="flex items-center space-x-3">
-          <img src="{{ asset('images/vietphan.png') }}" alt="VIET PHAN Logo" class="h-[60px] rounded-lg">
+          <img src="{{ asset('images/vietphan.png') }}" alt="VIET PHAN Logo" class="h-[60px]">
         </div>
 
         <!-- Desktop Navigation -->

@@ -5,7 +5,7 @@
       <!-- Company Information -->
       <div class="md:col-span-4">
         <div class="flex items-center space-x-3 mb-4">
-          <img src="{{ asset('images/vietphan_trang.png') }}" alt="VIET PHAN Logo" class="h-[100px] rounded-lg">
+          <img src="{{ asset('images/vietphan_trang.png') }}" alt="VIET PHAN Logo" class="h-[100px]">
         </div>
         <p class="text-gray-400 leading-relaxed mb-4">
           {{ __('VietPhan provides equipment and complete solutions for conferences, seminars, events and group tours. We consult, survey, and deploy equipment: audio, lighting, screens, interpretation booths, exhibition counters, check-in equipment, shuttle vehicles, outdoor supplies and supporting technology.') }}
